@@ -1,3 +1,13 @@
 h1 {
     color: lightcoral;
 }
+/* .yellow-bg{
+    background-color: greenyellow !important;
+} */
+
+.text-center{
+    text-align: center;
+}
+.large-text{
+    font-size: 2em;
+}

@@ -10,7 +10,7 @@
         .fruits-container li{
             color: tomato;
         }
-        #fruits-title{
+        #Fruit-title{
             color: black;
 
         }
@@ -25,7 +25,7 @@
     <header>
         <h1>Welcome to my DOM</h1>
     </header>
-    <main>
+    <main id="main-content">
         <section>
             <h1>My Awesome DOM de baba</h1>
         <ul>
@@ -35,17 +35,20 @@
             <li>Dom de re baba</li>
         </ul>
         </section>
+
         <section class="fruits-container">
-            <h1 id="Fruit-title">Fruit I Like</h1>
+            <h1 id="Fruit-title" class="rando tut mut kut fut">Fruit I Like</h1>
             <ul>
                 <li>apple</li>
                 <li>banana</li>
                 <li>mango</li>   
             </ul>
         </section>
-        <section>
+
+
+        <section id="places-container" class="large-text">
             <h1 id="places-title">places I like to Visit</h1>
-            <ul>
+            <ul id="places-list">
                 <li class="important-places">coxs bazar </li>
                 <li class="important-places">bidese</li>
                 <li class="important-places">melay</li>
@@ -53,7 +56,9 @@
             </ul>
         </section>
     </main>
-    <script src="dom.js"></script>
+    <script src="js/dom.js"></script>
+    <script src="js/append.js"></script>
+    <script src="styleinjs.js"></script>
     <!-- <script>
         const student={
             name: 'Abul',
@@ -75,21 +80,21 @@
         for(const h1 of allHeadings ){
              // console.log(h1.innerText);
         }
-        const fruitsTitle = document.getElementById('fruits-title');
-        fruitsTitle.innerText ='fruits change by js';
+        const fruitsTitle = document.getElementById('Fruit-title');
+        fruitsTitle.innerText ='fruits change by js'
 
         const places = document.getElementsByClassName('important-places');
         // console.log(places)
         for(const place of places){
             // console.log(place)
-            console.log(place.innerText)
+            // console.log(place.innerText)
         }
 
         // querySelectorAll
-        const someLi = document.querySelectorAllL('.fruits-container li')
+        const someLi = document.querySelectorAll('.fruits-container li')
         // console.log(someLi);
         for(const li of someLi){
-            console.log(li.innerText);
+            // console.log(li.innerText);
         }
     </script>
     
